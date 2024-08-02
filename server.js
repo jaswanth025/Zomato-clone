@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // Connect to database
 connectDB();
 
-app.get("/api/restaurant", (req, res) => {
+app.get("/", (req, res) => {
   console.log("Serving list.html");
   res.sendFile(path.join(__dirname, "public", "list.html"));
 });
